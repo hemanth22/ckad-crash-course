@@ -87,6 +87,6 @@ Upon inspection of the HorizontalPodAutoscaler object, you will find that the nu
 
 ```
 $ kubectl get hpa nginx-hpa
-NAME        REFERENCE          TARGETS          MINPODS   MAXPODS   REPLICAS   AGE
-nginx-hpa   Deployment/nginx   0%/60%, 0%/75%   3         8         3          2m19s
+NAME        REFERENCE          TARGETS                       MINPODS   MAXPODS   REPLICAS   AGE
+nginx-hpa   Deployment/nginx   cpu: 0%/75%, memory: 2%/60%   3         8         3          77s
 ```
